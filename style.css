@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+	background-color: #00796B;
+	font-family: 'Roboto', sans-serif;
+}
+
+#container{
+	margin: auto;
+	width: 90%;
+}
+
+#villeEtDate {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.btn-light {
+	color: #00796B;
+	border-radius: 20px;
+}
+
+#date {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+#divInformations {
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+#temperature {
+	font-size: 150px;
+	margin-right: 80px;
+}
+
+#carteEtPosition {
+	color: white;
+}
+
+#longitude {
+	margin-right: 100px;
+}
