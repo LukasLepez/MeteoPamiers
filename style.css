@@ -17,13 +17,21 @@ body {
     text-align: center;
 }
 
+#ville {
+    background-color: #00796B;
+    border: none;
+    border-bottom: white solid 1px;
+    width: 30%;
+}
+
 .btn-light {
     border-radius: 20px;
     color: #00796B;
 }
 
 #date {
-    margin-bottom: 50px;
+    font-size: 25px;
+    margin-bottom: 30px;
     margin-top: 40px;
 }
 
@@ -34,35 +42,48 @@ body {
 }
 
 #temperature {
-    font-size: 150px;
+    font-size: 200px;
     margin-right: 80px;
+}
+
+#tempMax {
+    margin-top: 50px;
 }
 
 #longitude {
     margin-right: 100px;
 }
 
-@media (max-width: 768px){
-	#position {
-		text-align: center;
-	}
-	#divInformations {
-		display: block;
-		margin-bottom: 40px;
-	}
-	#divTemperature {
-		text-align: center;
-	}
-	#temperature {
-		margin: 0;
-	}
-	#informations {
-		text-align: center;
-	}
+@media (max-width: 1024px) {
+    #ville {
+        width: 60%;
+    }
 }
 
-@media (max-width: 480px){
-	#longitude {
-		margin-right: 20px;
-	}
+@media (max-width: 768px) {
+    #position {
+        text-align: center;
+    }
+    #divInformations {
+        display: block;
+        margin-bottom: 40px;
+    }
+    #divTemperature {
+        text-align: center;
+    }
+    #temperature {
+        margin: 0;
+    }
+    #informations {
+        text-align: center;
+    }
+    #tempMax {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #longitude {
+        margin-right: 20px;
+    }
 }
