@@ -20,21 +20,21 @@
                     <input type="text" name="ville" id="ville">
                 </div>
                 <div class="form-group">
-                    <button type="button" class="btn btn-light">Valider</button>
+                    <button type="button" class="btn btn-light" id="valider">Valider</button>
                 </div>
             </form>
             <p id="date"></p>
         </div>
         <div id="divInformations">
             <div id="divTemperature">
-            	<span id="temperature">7°</span>
+            	<span id="temperature">0°</span>
             </div>
             <div id="informations">
-            	<p id="tempMax">Temp max</p>
-            	<p>Temp min</p>
-            	<p>Pres. atmosphérique</p>
-            	<p>Vitesse du vent</p>
-            	<p>Humidité</p>
+            	<p id="tempMax">Temp. max : 0°</p>
+            	<p id="tempMin">Temp. min : 0°</p>
+            	<p id="presAtmo">Pres. atmosphérique : 0</p>
+            	<p id="vitesseVent">Vitesse du vent : 0</p>
+            	<p id="humidite">Humidité : 0%</p>
             </div>
         </div>
         <div id="carteEtPosition">
@@ -47,6 +47,7 @@
         	</div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="moment-with-locales.js"></script>
     <script src="jquery-3.3.1.js"></script>
     <script src="app.js"></script>
