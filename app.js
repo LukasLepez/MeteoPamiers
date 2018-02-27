@@ -21,7 +21,7 @@ $(document).ready(function() {
     
         fetch("http://api.openweathermap.org/data/2.5/weather?q=" + $("#ville").val() + "&units=metric&lang=fr&appid=ed328c793060247cdac872897948ba25")
             .then(res => res.json())
-            .then(resJson => $('#vitesseVent').text("Vitesse du vent : " + resJson.wind.speed + "km/h"));
+            .then(resJson => $('#vitesseVent').text("Vitesse du vent : " + resJson.wind.speed + " km/h"));
 
         fetch("http://api.openweathermap.org/data/2.5/weather?q=" + $("#ville").val() + "&units=metric&lang=fr&appid=ed328c793060247cdac872897948ba25")
             .then(res => res.json())
