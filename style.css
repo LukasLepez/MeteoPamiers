@@ -55,6 +55,12 @@ body {
     margin-right: 100px;
 }
 
+#map {
+	height: 600px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
 @media (max-width: 1024px) {
     #ville {
         width: 60%;
@@ -81,10 +87,16 @@ body {
     #tempMax {
         margin-top: 0;
     }
+    #map {
+    	height: 400px;
+    }
 }
 
 @media (max-width: 480px) {
     #longitude {
         margin-right: 20px;
+    }
+    #map {
+    	height: 200px;
     }
 }
