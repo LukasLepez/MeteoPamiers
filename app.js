@@ -44,6 +44,8 @@ $(document).ready(function() {
             .then(res => res.json())
             .then(resJson => $('#latitude').text("Latitude : " + resJson.coord.lat));
 
+        // Modifie la latitude et la longitude en fonction de la variable urlVille
+
         fetch(urlVille)
             .then(res => res.json())
             .then(resJson => mapOptions = {
@@ -51,6 +53,8 @@ $(document).ready(function() {
                 center: new google.maps.LatLng(resJson.coord.lat, resJson.coord.lon),
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             });
+
+        // Actualise la carte avec les nouvelles modifications
 
         fetch(urlVille)
             .then(res => res.json())
