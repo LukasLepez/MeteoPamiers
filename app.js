@@ -4,7 +4,7 @@ $("#date").text(moment().format("DD MMMM YYYY"));
 $(document).ready(function() {
     $("#valider").click(function() {
         var ville = $("#ville").val();
-        var urlVille = "http://api.openweathermap.org/data/2.5/weather?q=" + ville + "&units=metric&lang=fr&appid=ed328c793060247cdac872897948ba25";
+        var urlVille = "https://api.openweathermap.org/data/2.5/weather?q=" + ville + "&units=metric&lang=fr&appid=ed328c793060247cdac872897948ba25";
         fetch(urlVille)
             .then(res => res.json())
             .then(resJson => {
