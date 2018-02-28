@@ -1,13 +1,6 @@
 moment.locale('fr');
 $("#date").text(moment().format("DD MMMM YYYY"));
 
-var mapOptions = {
-    zoom: 11,
-    center: new google.maps.LatLng(43.11, 1.61),
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-};
-var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-
 $(document).ready(function() {
     $("#valider").click(function() {
         var ville = $("#ville").val();
@@ -25,13 +18,8 @@ $(document).ready(function() {
                     $('#longitude').text("Longitude : " + resJson.coord.lon),
                     $('#latitude').text("Latitude : " + resJson.coord.lat),
                     // Modifie la latitude et la longitude en fonction de la variable urlVille
-                    mapOptions = {
-                        zoom: 11,
-                        center: new google.maps.LatLng(resJson.coord.lat, resJson.coord.lon),
-                        mapTypeId: google.maps.MapTypeId.ROADMAP
-                    },
                     // Actualise la carte avec les nouvelles modifications
-                    map = new google.maps.Map(document.getElementById('map'), mapOptions);
+                    $('#map').html("<iframe src='https://www.google.com/maps/embed/v1/view?key=AIzaSyCBdOfwbLBMGhe9K77dPqD0x849yNQim3E&center=" + resJson.coord.lat + "," + resJson.coord.lon + "&zoom=11&maptype=satellite'></iframe>");
             });
     });
 });

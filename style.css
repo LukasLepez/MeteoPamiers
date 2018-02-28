@@ -59,6 +59,7 @@ body {
 	height: 600px;
 	margin-top: 20px;
 	margin-bottom: 50px;
+    width: 100%;
 }
 
 @media (max-width: 1024px) {
