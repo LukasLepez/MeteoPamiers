@@ -100,4 +100,7 @@ body {
     #map {
     	height: 200px;
     }
+    #temperature {
+        font-size: 150px;
+    }
 }
