@@ -22,7 +22,7 @@ $(document).ready(function() {
 
         fetch(urlVille)
             .then(res => res.json())
-            .then(resJson => $('#tempMin').text("Temp. max : " + resJson.main.temp_min + "°"));
+            .then(resJson => $('#tempMin').text("Temp. min : " + resJson.main.temp_min + "°"));
 
         fetch(urlVille)
             .then(res => res.json())
